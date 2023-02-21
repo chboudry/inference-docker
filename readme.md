@@ -9,9 +9,9 @@ These examples are made for image size comparaison depending of the technoloy us
 
 ## Docker container size
 
-| IMAGE        | SIZE |
-| -----------  | ----------- |
-| 1-aml-pip    | 1.08 GB     |
-| 2-aml-conda  | 2.73 GB     |
-| 3-custom-pip | 1.15 GB     |
-| 4-onnx       |             |
+| IMAGE        | DESCRIPTION                                          |SIZE |
+| -----------  | ---------------------------------------------------- |----------- |
+| 1-aml-pip    | Azure Machine Learning inference HTTP server + pip   | 1.08 GB    |
+| 2-aml-conda  | Azure Machine Learning inference HTTP server + conda | 2.73 GB    |
+| 3-custom-pip | Flask server + pip                                   | 1.15 GB    |
+| 4-onnx       | ONNX runtime                                         |            |
