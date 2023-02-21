@@ -14,4 +14,4 @@ These examples are made for image size comparaison depending of the technoloy us
 | 1-aml-pip    | Azure Machine Learning inference HTTP server + pip   | 1.08 GB    |
 | 2-aml-conda  | Azure Machine Learning inference HTTP server + conda | 2.73 GB    |
 | 3-custom-pip | Flask server + pip                                   | 364 MB     |
-| 4-onnx       | ONNX runtime                                         |            |
+| 4-onnx       | Flask server + ONNX runtime                          | 288 MB     |

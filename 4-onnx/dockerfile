@@ -1,3 +1,15 @@
 FROM python:3.9-slim
 
-RUN pip install numpy onnxruntime
+#RUN pip install flask onnxruntime
+
+#ENTRYPOINT ["/bin/bash"]
+
+WORKDIR /app
+COPY ./requirements.txt /app/requirements.txt
+COPY ./serve.py /app/serve.py
+COPY ./model.onnx /app/model.onnx
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+ENV FLASK_APP serve.py
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5001"]

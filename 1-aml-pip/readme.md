@@ -16,3 +16,5 @@ curl --location '127.0.0.1:5001/score' \
 https://github.com/Azure/azureml-examples/tree/main/cli/endpoints/online/custom-container/minimal/single-model
 
 https://learn.microsoft.com/en-us/azure/machine-learning/how-to-inference-server-http
+
+https://hub.docker.com/_/microsoft-azureml-inference
