@@ -1,7 +1,11 @@
-# Docker container inference image
+# Inference in Docker container 
 
 ## Motivation
-http
+Targetted scenario is to deploy inference image to IOT edge through IOT Hub.
+
+To suit this scenario, model and scoring script are baked into the image.
+
+These examples are made for image size comparaison depending of the technoloy used.
 
 ## Docker container size
 
