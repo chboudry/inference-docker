@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/azureml/minimal-ubuntu20.04-py38-cpu-inference:latest
+
+COPY . .
+
+RUN pip install numpy pip scikit-learn scipy joblib
+
+ENTRYPOINT azmlinfsrv --entry_script score.py --model_dir ./
