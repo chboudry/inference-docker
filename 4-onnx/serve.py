@@ -17,13 +17,9 @@ class NumpyEncoder(json.JSONEncoder):
 
 @app.route("/score", methods=["POST"])
 def predict():
-    print(request.data)
     raw_data = json.loads(request.data)
-    print(raw_data)
     data = raw_data.get("data",None)
-    print(data)
     result = session.run(None, {"input":data})
-    print(result)
     return json.dumps(result, cls=NumpyEncoder)
 
 if __name__ == "__main__":
